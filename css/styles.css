@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafbfc;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header__content {
+  width: 100%;
+  height: 80px;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content .logo a {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.header__content .nav__content .nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__content .nav__list .nav__item .search__input {
+  border: 2px solid #000;
+  width: 400px;
+  /* background-color: rgba(222, 221, 218, 0.2); */
+  background-color: transparent;
+  padding: 10px 24px;
+  border-radius: 32px;
+  outline: none;
+}
+
+.header__content .nav__list .nav__item .search__input::placeholder {
+  color: #898989;
+}
+
+.header__content .nav__content .nav__list .nav__item a {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.header__content .nav__content .nav__list .btn__login {
+  /* background-color: #ffff00; */
+  background-color: #6f00ff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 1px #000;
+  padding: 4px 16px;
+  border-radius: 16px;
+  transition: all 0.2s;
+}
+
+.header__content .nav__content .nav__list .btn__login a {
+  color: #fff;
+}
+
+.header__content .nav__content .nav__list .btn__login:hover {
+  box-shadow: 6px 6px 1px #000;
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+}
+
+main .section__welcome {
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+
+main .section__welcome .title__welcome {
+  width: 60%;
+  font-size: 4rem;
+  line-height: 58px;
+  font-weight: 600;
+}
+
+main .section__welcome p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+main .section__welcome .btn__welcome {
+  /* background-color: #ffff00; */
+  background-color: #f27100;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 1px #000;
+  color: #000;
+  padding: 16px;
+  border-radius: 16px;
+  transition: all 0.2s;
+}
+
+main .section__welcome .btn__welcome:hover {
+  box-shadow: 10px 10px 1px #000;
+}
+
+main .section__explore {
+  padding: 4rem;
+  width: 100%;
+}
+
+main .section__explore p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+main .section__explore .line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 16px;
+}
+
+main .section__explore h2 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 68px;
+  width: 60%;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 4rem;
+  background-color: #000;
+  position: relative;
+  bottom: 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+}
+
+footer ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+  }
+
+  main .section__welcome {
+    padding: 0 1rem;
+  }
+
+  main .section__explore {
+    padding: 4rem 1rem 1rem;
+  }
+
+  .search {
+    display: none;
+  }
+
+  main .section__welcome .title__welcome {
+    width: 80%;
+    font-size: 2.2rem;
+    line-height: 32px;
+  }
+
+  main .section__explore h2 {
+    width: 80%;
+    font-size: 2.2rem;
+    line-height: 32px;
+  }
+
+  main {
+    padding: 4rem 1rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  footer ul {
+    gap: 1rem;
+  }
+
+  footer ul li a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+}
